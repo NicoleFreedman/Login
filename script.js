@@ -22,19 +22,17 @@ login.addEventListener("click", function () {
 	let password = document.createElement("input");
 	password.setAttribute("placeholder", "Password");
 	password.setAttribute("type", "password");
-	// let submit = document.createElement("div");
-	// submit.setAttribute("id", "submit");
-	// submit.setAttribute("class", "button");
-	// submit.innerHTML = "Submit!";
+	let title = document.createElement("h1");
+	title.innerHTML = "Member login";
+	let photo = document.createElement("img");
+	photo.setAttribute("src", "placeholder.png");
+	form.append(title);
+	form.append(photo);
 	form.append(firstName);
 	form.append(password);
 	container.append(submit);
 	login.style.display = "none";
 	submit.style.display = "block";
-	// login.innerHTML = "Submit!";
-	// login.id = "submit";
-	// let submit = document.querySelector("#submit");
-	// submit.setAttribute( "onclick", Boo());
 });
 
 	
@@ -44,4 +42,3 @@ login.addEventListener("click", function () {
 	welcome.innerHTML = `Welcome back ${firstName.value}`;
 	container.append(welcome);
 })
-

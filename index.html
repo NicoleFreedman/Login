@@ -11,6 +11,11 @@
 		}
 		body{
 			font-family: monospace;
+			background-image: linear-gradient(#d2e4e4, #8ce2e6);
+			color: #ffab91;
+		}
+		img{
+			margin-top: 20px;
 		}
 		.container{
 			display: flex;
@@ -21,7 +26,7 @@
 			height: 100vh;
 		}
 		.button{
-			width: 250px;
+			width: 300px;
 			vertical-align: middle;
 			text-align: center;
 			padding: 15px;
@@ -37,11 +42,14 @@
     		margin: 30px;
 		}
 		input{
+			display: flex;
+    		flex-flow: column wrap;
+			width: 300px;
 			margin-top: 30px;
+			padding: 0 15px;
 			border: 1px solid #20c4cc;
 			height: 3em;
-			color: #20c4cc;
-			width: 85%;
+			color: #757575;
 			font-size: 15px;
 			border-radius: 5px;
 			outline: none;
@@ -53,12 +61,10 @@
 		#submit{
 			display: none;
 		}
-
-		#welcome{
+		#welcome {
 			margin: 15px;
-			font-size: 1.5em;
+			font-size: 2em;
 		}
-
 	</style>
 </head>
 <body>
